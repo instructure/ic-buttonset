@@ -1,0 +1,31 @@
+{
+  "name": "ic-buttonset",
+
+  "version": "0.0.1",
+
+  "authors": [
+    "Zach Pendleton <zachpendleton@gmail.com>"
+  ],
+
+  "moduleType": [
+    { "type": "amd", "main": "dist/main.js" },
+    { "type": "es6", "main": "main.js" }
+  ],
+
+  "license": "MIT",
+
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+
+  "dependencies": {
+    "ember": "~1.0.0"
+  },
+
+  "devDependencies": {
+    "requirejs": "~2.1.8"
+  }
+}
