@@ -1,6 +1,6 @@
 {
   "name": "ic-buttonset",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "accessible buttonset component that plays w/ Twitter's 2.x Bootstrap styles",
   "main": "main.js",
   "scripts": {
@@ -20,4 +20,3 @@
     "matchdep": "~0.3.0"
   }
 }
-

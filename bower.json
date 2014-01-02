@@ -1,6 +1,6 @@
 {
   "name": "ic-buttonset",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "main": "main.js",
   "authors": [
     "Zach Pendleton",
@@ -21,4 +21,3 @@
     "ember-template-compiler": "http://builds.emberjs.com/release/ember-template-compiler.js"
   }
 }
-
