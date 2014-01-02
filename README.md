@@ -2,20 +2,18 @@
 
 An accessible buttonset component that plays w/ Twitter's 2.x Bootstrap styles.
 
-## Getting started
+## installation
 
 ```sh
-$ npm install
-$ bower install
-$ grunt dev
-
-# open a new tab
-$ grunt karma:watch
+$ npm install ic-buttonset
+# or ...
+$ bower install ic-buttonset
 ```
 
-## Using the component
+Or just grab `dist/main.js` and include it into your app however you'd
+like.
 
-Once you've included in your favorite Ember build, drop this in your template:
+## Usage
 
 ```handlebars
 {{#ic-buttonset value=filter default="2"}}
@@ -33,6 +31,28 @@ Buttonsets take two optional parameters:
 Buttons also have two parameters:
   * **label**: The text label of this button.
   * **value**: The value assigned to the bound property (see "value" on the buttonset).
+
+Contributing
+------------
+
+After cloning this repo, install dependencies:
+
+```sh
+$ npm install
+$ bower install
+```
+
+Fire up the grunt watcher:
+
+```sh
+$ grunt
+```
+
+Then in a different tab run your tests with testem:
+
+```sh
+$ testem
+```
 
 ## License
 

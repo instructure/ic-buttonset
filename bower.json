@@ -1,31 +1,24 @@
 {
   "name": "ic-buttonset",
-
-  "version": "0.0.1",
-
+  "version": "0.0.0",
+  "main": "main.js",
   "authors": [
-    "Zach Pendleton <zachpendleton@gmail.com>"
+    "Zach Pendleton",
+    "Ryan Florence"
   ],
-
-  "moduleType": [
-    { "type": "amd", "main": "dist/main.js" },
-    { "type": "es6", "main": "main.js" }
-  ],
-
+  "dependencies": {
+    "ember": "1.2.0"
+  },
   "license": "MIT",
-
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "test"
+    "test",
+    "tests"
   ],
-
-  "dependencies": {
-    "ember": "~1.0.0"
-  },
-
   "devDependencies": {
-    "requirejs": "~2.1.8"
+    "ember-template-compiler": "http://builds.emberjs.com/release/ember-template-compiler.js"
   }
 }
+
