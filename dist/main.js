@@ -14,7 +14,7 @@
 
     tagName: 'button',
 
-    classNameBindings: [':btn', 'isSelected', 'isSelected:active'],
+    classNameBindings: ['ic-button', ':btn', 'isSelected', 'isSelected:active'],
 
     ariaRole: 'radio',
 
@@ -56,7 +56,7 @@
 
   var IcButtonset = Ember.Component.extend({
 
-    classNames: ['btn-group'],
+    classNames: ['ic-button-set', 'btn-group'],
 
     ariaRole: 'radiogroup',
 
