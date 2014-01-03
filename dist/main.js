@@ -25,7 +25,7 @@
     }.on('didInsertElement'),
 
     click: function() {
-      this.get('parentView').send('select', this);
+      this.get('parentView').select(this);
     },
 
     ariaChecked: function() {
@@ -33,8 +33,8 @@
     }.property('isSelected'),
 
     isSelected: function() {
-      return this.get('parentView.selected') === this;
-    }.property('parentView.selected')
+      return this.get('parentView.value') === this.get('value');
+    }.property('parentView.value')
   });
 
   return IcButton;
@@ -76,12 +76,16 @@
     },
 
     select: function(btn) {
-      this.set('selected', btn);
+      this.set('value', btn.get('value'));
     },
 
-    onSelectedDidChange: function() {
-      this.set('value', this.get('selected.value'));
-    }.observes('selected')
+    updateSelectedOnValueChange: function() {
+      var value = this.get('value');
+      var button = this.get('buttons').find(function(btn) {
+        return btn.get('value') == value;
+      });
+      this.set('selected', button);
+    }.observes('value')
 
   });
 
